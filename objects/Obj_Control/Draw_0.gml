@@ -77,7 +77,7 @@ if(global.Menu != -1 && room == Room1){
 		case "CMD":
 			draw_sprite_stretched(Spr_Toolbar,0,64,64,room_width-64*2,room_height-64*2)
 			command = keyboard_string
-			draw_text_ext(96,96,global.Path+" > "+command,24,1100)
+			draw_text_ext(96,96,global.Path+" > "+command+"|",24,1100)
 			if(array_length(show) > 0){
 				for(var i = 0; i < array_length(show);i++){
 					draw_text_color(96,128+32*i,show[i][0],show[i][1],show[i][1],show[i][1],show[i][1],1)	
@@ -246,7 +246,7 @@ if(global.Menu != -1 && room == Room1){
 						}
 					break
 				}
-				
+				keyboard_string = ""
 			}
 			
 		break

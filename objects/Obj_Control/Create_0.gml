@@ -1,6 +1,7 @@
 randomize()
 global.Menu = -1
 global.End = 0
+
 Old = global.Menu
 Created =  []
 Passes = []
@@ -29,6 +30,18 @@ function Check_Pass(Pass){
 		}
 	}
 	return false
+}
+
+function createGame(_starter,_ender) constructor{
+	starter = _starter
+	ender = _ender
+}
+
+Games = {
+	placeholder: new createGame(function(){instance_create_depth(room_width/2,room_height/2,0,Obj_Arquivo)},function(){
+		instance_destroy(Obj_Arquivo)
+		room_goto(Room2)
+	})
 }
 
 Parts = [
@@ -75,13 +88,28 @@ Parts = [
 	
 	/*10*/["Folder",[[5,function(){global.Menu = 3},"Voltar",2],[4,function(){global.Menu = 14},"Estranho.txt",1],[4,function(){global.Menu = 11},"Solicitações PlIAGround.txt",0]],function(){},"Arquivos/Ejetável C:/Documentos",2],
 	
-	/*11*/["Text","Você achou mesmo que iria ser tão fácil?",function(){room_goto(Room2)},2],
+	/*11*/["Text","Você achou mesmo que iria ser tão fácil?\n\nQue tal a gente jogar um jogo? ;)\nPegue seu arquivo se puder!",function(){
+		gameStart(Games.placeholder)
+	},2],
 	
 	/*12*/["Text","Comandos CMD\n\nSe mover:\ncd [caminho]\n\nEx: cd pasta/pasta\n\ncd ../(voltar)\n\nMostrar arquivos:\n\nTodos não ocultos: dir\nTodos: dir /a\nSó ocultos: dir /a:h\n\nPara abrir um arquivo, apenas escreva o seu nome quando estiver na pasta correta.",function(){},1],
 	
 	/*13*/["CMD",function(){}],
 	
 	/*14*/["Text","Tem algo faltando, não? Ou será que você apenas não consegue enxergá-lo?",function(){},2],
+	/*15*/["Folder",[[7,function(){
+		var bg = layer_background_get_id(layer_get_id("Background"));
+		layer_background_sprite(bg,Spr_Wallpaper)
+		var file;
+		file = get_open_filename("image file|*.jpg", "");
+		if file != ""
+		{
+		    sprite_replace(Spr_Wallpaper,file,1,0,0,0,0);
+		}	
+	},"Importar Plano de Fundo",1],[7,function(){
+		var bg = layer_background_get_id(layer_get_id("Background"));
+		layer_background_sprite(bg,Spr_WallpaperD)
+	},"Utilizar Plano de Fundo Padrão",1]],function(){},"Config",1],
 ]
 
 function Clean() {

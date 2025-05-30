@@ -13,15 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b5b70fa8-cbed-4a22-81b2-9450830b9bde",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1b25e51e-1e7b-426a-bb95-6c7b2b71caba",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 768,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ed4ce155-498c-445e-8f3a-3e5d326cc4e7","blendMode":0,"displayName":"Layer 1","isLocked":false,"opacity":52.0,"visible":true,},
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b9463b0d-d77b-48e8-874e-eb7e1d382906","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4c855706-1a37-476c-b6ba-4d8e680b760e","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -55,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b5b70fa8-cbed-4a22-81b2-9450830b9bde","path":"sprites/Spr_Wallpaper/Spr_Wallpaper.yy",},},},"Disabled":false,"id":"1d669756-0667-4172-a175-6d5ffc5dfc22","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1b25e51e-1e7b-426a-bb95-6c7b2b71caba","path":"sprites/Spr_Wallpaper/Spr_Wallpaper.yy",},},},"Disabled":false,"id":"77095226-cf3c-488e-886e-04d1a8a10285","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

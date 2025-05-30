@@ -2,7 +2,7 @@ draw_self()
 
 if(variable_instance_exists(self,"nome")){
 	draw_set_halign(fa_center)
-	draw_text_ext(x,y+sprite_height/2+16,nome,24,32)	
+	drawWithBorderExt(x,y+sprite_height/2+16,nome,c_white,c_black,1,24,32)	
 	draw_set_halign(fa_left)
 }
 

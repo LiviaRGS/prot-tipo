@@ -1,0 +1,1 @@
+global.Game = 0
